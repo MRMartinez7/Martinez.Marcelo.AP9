@@ -5,16 +5,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello and welcome!");
+
+        ;
        // Ejercicio1();
        // Ejercicio2();
        // Ejercicio3();
        // Ejercicio4();
        // Ejercicio5();
-        Ejercicio6();
+       // Ejercicio6();
        // Ejercicio7();
+       // Ejercicio7(8);
+
+
 
     }
-    public static void Ejercicio1(){
+       public static void Ejercicio1(){
         /*1 Crear las variables correspondientes para leer tu nombre,
          apellido y edad e imprimirlos por consola en una oración.*/
         Scanner myScanner = new Scanner(System.in);
@@ -46,7 +51,7 @@ e imprimir por consola cuál es el mayor.
             System.out.println("El valor mayor entre "+num1+"-"+num2+"-"+num3+" es: "+num3);
         }
     }
-    public static void Ejercicio3(){
+    public static String Ejercicio3(){
         /*3 Realizar un pequeño programa que permita el ingreso de un
 número e imprimir por consola su paridad */
         Scanner myScanner = new Scanner(System.in);
@@ -58,6 +63,7 @@ número e imprimir por consola su paridad */
         } else {
             System.out.println("El numero "+numParidad+" es IMPAR ");
         }
+        return null;
     }
     public static void Ejercicio4(){
         /*4 Crear el código correspondiente que permita ingresar 2 cadenas
@@ -67,7 +73,7 @@ de caracteres e imprima por consola si son iguales o no*/
         String cadena1 =myScanner.next();
         System.out.println("Introduzca cadena 2");
         String cadena2 =myScanner.next();
-        if (cadena1.toLowerCase() == cadena2.toLowerCase()){
+        if (cadena1.equals(cadena2)){
             System.out.println(cadena1+" y "+cadena2+" son iguales");
         }else {
             System.out.println(cadena1+" y "+cadena2+" no son iguales");
@@ -88,9 +94,31 @@ números, almacenarlos en una colección hasta ingresar un 0*/
         for (int i = 0; i<numAlmacenado.size(); i++){
             System.out.println(i+": "+numAlmacenado.get(i));
         }
-    }
-    public static String Ejercicio6(){
-        return "";
 
     }
+    public static void Ejercicio6(){
+       /* 6. Crear una función que imprima un mensaje de bienvenida en la
+        consola.*/
+
+        System.out.println("Hola Bienvenido!");
     }
+    /*public static String Ejercicio7(){
+        Crear una función que reciba un número entero y devuelva si es
+par o impar en forma de texto
+
+        return Ejercicio3();
+    }*/
+    public static void Ejercicio7(int numParImpar){
+
+       /* Crear una función que reciba un número entero y devuelva si es
+        par o impar en forma de texto*/
+
+        if (numParImpar % 2 == 0){
+            System.out.println("El numero "+numParImpar+" es PAR ");
+        } else {
+            System.out.println("El numero "+numParImpar+" es IMPAR ");
+        }
+    }
+
+    }
+
